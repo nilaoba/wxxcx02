@@ -19,3 +19,23 @@
 .usermotto {
   margin-top: 200px;
 }
+.container{
+  background-color: black;
+  height: 150px;
+  width: 100%;
+}
+.a{
+  margin-top:-50px;
+  color: aliceblue;
+  font-size: 20px;
+}
+.b{
+  margin-top:15px;
+  color: aliceblue;
+  font-size: 25px;
+}
+.c{
+  margin-top:5px;
+  color: aliceblue;
+  font-size: 10px;
+}

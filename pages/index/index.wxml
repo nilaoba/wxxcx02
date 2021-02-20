@@ -1,4 +1,16 @@
 <!--index.wxml-->
 <view class="container">
-  
+<text class="a">联系我们</text>
+<text class="b">海内存知己，天涯若比邻</text>
+<text class="c">欢迎朋友们来公司坐坐，探讨关于团队协同的一切问题。</text>
+</view>
+<view >
+  <map id="map4select"
+ longitude="{{longitude}}" latitude="{{latitude}}" 
+ markers="{{markers}}"
+ scale="20" 
+ style="width:{{map_width}}px;height:{{map_height}}px"
+ bindregionchange="regionchange"
+ controls="{{controls}}">
+</map>
 </view>

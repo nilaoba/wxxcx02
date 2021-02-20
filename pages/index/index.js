@@ -1,54 +1,91 @@
 // index.js
 // 获取应用实例
-const app = getApp()
+var app = getApp()
 
 Page({
-  data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
-  },
-  // 事件处理函数
-  bindViewTap() {
-    wx.navigateTo({
-      url: '../logs/logs'
+    data:{
+      map_width: 380
+      ,map_height: 380
+    }
+    //show current position
+    ,onLoad: function(){
+    var that = this;
+    // 获取定位，并把位置标示出来
+    app.getLocationInfo(function(locationInfo){
+        console.log('map',locationInfo);
+        that.setData({
+          longitude: locationInfo.longitude
+          ,latitude: locationInfo.latitude
+          ,markers:[
+            {
+            id: 0
+            ,iconPath: "../imgs/ic_position.png"
+            ,longitude: locationInfo.longitude
+            ,latitude: locationInfo.latitude
+            ,width: 30
+            ,height: 30
+            }
+          ]
+        })
     })
-  },
-  onLoad() {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse) {
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
+
+    //set the width and height
+    // 动态设置map的宽和高
+    wx.getSystemInfo({
+      success: function(res) {
+        console.log('getSystemInfo');
+        console.log(res.windowWidth);
+        that.setData({
+           map_width: res.windowWidth
+          ,map_height: res.windowWidth
+          ,controls: [{
+            id: 1,
+            iconPath: '../imgs/ic_location.png',
+            position: {
+              left: res.windowWidth/2 - 8,
+              top: res.windowWidth/2 - 16,
+              width: 30,
+              height: 30
+            },
+            clickable: true
+          }]
         })
       }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
+    })
+
+  }
+  //获取中间点的经纬度，并mark出来
+  ,getLngLat: function(){
+      var that = this;
+      this.mapCtx = wx.createMapContext("map4select");
+      this.mapCtx.getCenterLocation({
+        success: function(res){
+
+            that.setData({
+            longitude: res.longitude
+            ,latitude: res.latitude
+            ,markers:[
+              {
+              id: 0
+              ,iconPath: "../imgs/ic_position.png"
+              ,longitude: res.longitude
+              ,latitude: res.latitude
+              ,width: 30
+              ,height: 30
+              }
+            ]
           })
+
         }
       })
-    }
-  },
-  getUserInfo(e) {
+  }
+  ,regionchange(e) {
+    // 地图发生变化的时候，获取中间点，也就是用户选择的位置
+      if(e.type == 'end'){
+          this.getLngLat()
+      }
+  }
+  ,markertap(e) {
     console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
   }
 })
