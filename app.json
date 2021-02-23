@@ -1,7 +1,12 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/abount/abount",
+    "pages/server/server",
+    "pages/case/case",
+    "pages/relation/relation"
+
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -14,6 +19,45 @@
       "desc": "你的位置信息将用于小程序位置接口的效果展示"
     }
   },
+  "tabBar": {
+    
+        "list": [
+          {
+            "pagePath": "pages/index/index",
+            "text": "首页",
+            "iconPath": "/images/h1.png",
+            "selectedIconPath": "/images/home-h.png"
+          },
+          {
+            "pagePath": "pages/abount/abount",
+            "text": "我们",
+            "iconPath": "/images/h1.png",
+            "selectedIconPath": "/images/user-h.png"
+          },
+          {
+            "pagePath": "pages/server/server",
+            "text": "服务",
+            "iconPath": "/images/h1.png",
+            "selectedIconPath": "/images/list-h.png"
+            
+          },
+    {
+              "pagePath": "pages/case/case",
+              "text": "案例",
+              "iconPath": "/images/h1.png",
+              "selectedIconPath": "/images/list-h.png"
+              
+            },
+      {
+                "pagePath": "pages/relation/relation",
+                "text": "联系",
+                "iconPath": "/images/h1.png",
+                "selectedIconPath": "/images/list-h.png"
+                
+              }
+        ]
+      },
+
     "style": "v2",
     "sitemapLocation": "sitemap.json"
 }

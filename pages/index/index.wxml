@@ -1,16 +1,85 @@
 <!--index.wxml-->
 <view class="container">
-<text class="a">联系我们</text>
-<text class="b">海内存知己，天涯若比邻</text>
-<text class="c">欢迎朋友们来公司坐坐，探讨关于团队协同的一切问题。</text>
+<text class="b">移动公关第一品牌</text>
+<text class="c">未来,我们一直在路上 移动互联网时代的创意革命 “北京前推”</text>
 </view>
 <view >
-  <map id="map4select"
- longitude="{{longitude}}" latitude="{{latitude}}" 
- markers="{{markers}}"
- scale="20" 
- style="width:{{map_width}}px;height:{{map_height}}px"
- bindregionchange="regionchange"
- controls="{{controls}}">
-</map>
+<view>
+<image src="../imgs/mobile.png" class="img01"></image>
+<view class="img01text01">移动互联网搭建</view>
+<view class="img01text02">根据客户的需求，市场状况，企业情况等进行</view>
+<view class="img01text03">搭建适合客户的微信。</view>
 </view>
+<view>
+<image src="../imgs/Spread.png" class="img02"></image>
+<view class="img02text01">社会化媒体传播</view>
+<view class="img02text02">以落地活动为主要传播信息，定期将文字、图</view>
+<view class="img02text03">片及视频短片传到官方微信、微博进行传播。</view>
+</view>
+<view>
+<image src="../imgs/web.png" class="img03"></image>
+<view class="img03text01">定制项目开发</view>
+<view class="img03text02">丰富Web组件，可二次开发的面板，可快速</view>
+<view class="img03text03">构建界面出色、体验优秀的跨屏页面。</view>
+</view>
+<view class="img04view">
+<image class="img04" src="../imgs/weixin.png"></image>
+<view class="img04text01">微信全案营销</view>
+<view class="img04text02">为企业量身定制独立的全案营销方案，全方位</view>
+<view class="img04text03">的为客户提供有效的解决方案。</view>
+</view>
+</view>
+
+<view class="lunbo">
+  <swiper indicator-dots="true" autoplay="true">
+    <swiper-item>
+<image src="../imgs/mobile.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../imgs/Spread.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../imgs/web.png"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="lunbotext">
+  <view class="meijie">
+    媒介资源
+  </view>
+  <view class="text01">
+    微信订阅号总账户数超70000+，累计订阅量100亿，覆盖行业广泛，受众群体精准
+  </view>
+  <text>
+资源可视化展示及操作
+历史及实时监控图表
+记录所有重要操作行为
+工单系统，第一时间解决资源相关问题
+  </text> 
+  <button class="liaojie">了解详情</button>
+</view> 
+<view class="date">
+  <view class="datetext01">
+    我们拥有最全面的数据资源
+  </view>
+  <view>
+   <text class="datetext02">拥有1200家媒体</text> 新闻稿在线媒体实时更新综合门户、地方门户、行业媒体细分。 
+  </view>
+  <view>
+    <text class="datetext02">微信订阅号总账户数超70000+</text>累计订阅量100亿，覆盖行业广泛，受众群体精准。
+  </view>
+  <view>
+    <text class="datetext02">微信朋友圈总账户数超22000+</text>累计好友量1亿5千万，覆盖行业广泛，受众群体精准，均视频认证过确保真实。
+  </view>
+</view>
+<view class="xuanzhe">
+  <view class="xuanzhetext01">
+    他们选择了我们
+  </view>
+  <view>
+    <image src="../imgs/h1.png"></image><image src="../imgs/h2.png"></image><image src="../imgs/h3.png"></image><image src="../imgs/h4.png"></image>
+    <image src="../imgs/h5.png"></image><image src="../imgs/h6.png"></image><image src="../imgs/h7.png"></image><image src="../imgs/h8.png"></image>
+  </view>
+</view>
+
+

@@ -39,3 +39,197 @@
   color: aliceblue;
   font-size: 10px;
 }
+.img01{
+  margin-top: 39px;
+  margin-left: 66px;
+  height: 71px;
+  width: 67px;
+}
+.img01text01{
+  font-size: 8px;
+  margin-left: 69px;
+}
+.img01text02{
+  font-size: 5px;
+  margin-left: 46px;
+}
+.img01text03{
+  margin-left: 71px;
+  font-size:5px;
+}
+.img02{
+  position: relative;
+  top: -112px;
+  left: 248px;
+  height: 83px;
+  width: 79px;
+}
+.img02text01{
+  position: relative;
+  top: -114px;
+  left: 238px;
+  font-size:8px;
+  margin-left: 18px;
+}
+.img02text02{
+  position: relative;
+  top: -114px;
+  left: 238px;
+  font-size:5px;
+}
+.img02text03{
+  position: relative;
+  top: -114px;
+  left: 219px;
+  margin-left: 20px;
+  font-size:5px;
+}
+.img03{
+  position: relative;
+  top: -101px;
+  left: 45px;
+  height: 107px;
+  width: 106px;
+  }
+  .img03text01{
+    position: relative;
+    top: -113px;
+    left: 57px;
+    font-size: 8px;
+    margin-left: 18px;
+  }
+  .img03text02{
+    position: relative;
+    top: -113px;
+    left: 50px;
+    font-size:5px;
+  }
+  .img03text03{
+    position: relative;
+    top: -113px;
+    left: 38px;
+    margin-left: 20px;
+    font-size:5px;
+  }
+  .img04{
+    position: relative;
+    top: -113px;
+    left: 38px;
+    height: 79px;
+    width: 73px;
+  }
+  .img04text01{
+    position: relative;
+    top: -111px;
+    left: 36px;
+    font-size: 8px;
+    margin-left: 18px;
+  }
+  .img04text02{
+    position: relative;
+    top: -112px;
+    left: 33px;
+    font-size:5px;
+  }
+  .img04text03{
+    position: relative;
+    top: -112px;
+    left: 31px;
+    margin-left: 20px;
+    font-size:5px;
+  }
+  .img04view{
+    position: relative;
+    top: -113px;
+    left: 215px;
+  }
+  .lunbo{
+    position: relative;
+    top: -190px;
+    height: 50px;
+    width: 100%;
+  }
+  .lunbotext{
+    position: relative;
+    top: -85px;
+    left: 1px;
+    height: 280px;
+    width: 100%;
+
+    border-style: solid solid solid none;
+  }
+  .meijie{
+    font-size:22px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .text01{
+    margin-top: 5px;
+    font-size:15px;
+    opacity:0.7;
+  }
+  .lunbotext text{
+    font-size:13px;
+  }
+  .liaojie{
+    background-color: darkgray;
+    margin-top: 20px;
+  }
+  .date{
+    position: relative;
+    top: -50px;
+    left: 1px;
+  }
+  .date view{
+    text-align: center;
+    margin-top: 5px;
+    opacity:0.7;
+  }
+  .datetext01{
+    margin-bottom: 20px;
+    font-size:22px;
+    opacity:0.5;
+  }
+  .datetext02{
+    color: rgb(255, 15, 15);
+    opacity:10;
+  }
+  .xuanzhe{
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+  .xuanzhetext01{
+    font-size:30px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .xuanzhe image{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 75px;
+    width: 85px;
+  }
+  .weibu{
+    margin-top: 50px;
+  }
+  .logoimage{
+    height: 40px;
+    width: 40px;
+  }
+  .logo{
+    position: relative;
+    top: -50px;
+    left: 1px; 
+  }
+  .dibu{
+    position:fixed;
+    left:0;
+    bottom:0;
+    width: 100%;
+    height: 50px;
+    border-style: solid solid solid none;
+  }
+  .dibu button{
+    font-size:15px;
+    width: 20px;
+}
